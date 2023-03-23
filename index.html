@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>First site</title>
+</head>
+<body>
+    
+   <div class="all">
+       <header class="header">
+
+        <a href="index.html" class="logo">
+            <img src="./img/logo.svg" alt="logo">
+        </a>
+   <nav>
+       <ul class="menu">
+            <li class="menu__list"><a href="index.html" class="menu__link menu__link-active">Главная</a> </li>
+            <li class="menu__list"><a href="students.html" class="menu__link">Студенты</a> </li>
+            <li class="menu__list"><a href="about.html" class="menu__link">О курсе</a> </li>
+            <li class="menu__list"><a href="contacts.html" class="menu__link">Контакты</a> </li>
+      </ul>
+   </nav>
+        <a href="#" class="button">Заказать звонок</a>
+
+    </header>
+
+    <main class="content">
+
+        <h1 class="title">
+            Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!
+        </h1>
+
+        <form class="popup visible">
+            <h3 class="popup__title">Войти на сайт</h3>
+            <input class="popup__input popup__input-log" type="text" placeholder="Логин">
+            <input class="popup__input popup__input-pass" type="password" name="" id="" placeholder="Пароль">
+            <a href="#" class="button button__second">Войти</a>
+        </form>
+
+        <img class="content__img" src="./img/content.jpg" alt="content">
+        <div class="content__info">
+            <div class="content__section">
+                <div class="content__article">
+                    <h3 class="subtitle">Для кого этот курс</h3>
+                    <p class="about__text">Этот курс рассчитан на новичков, которые только начинают знакомство с веб-разработкой. В начале курса вы узнаете о том, как устроен Интернет и веб-сайты. 
+                        Для обучения необходимо только владеть компьютерной грамотностью (пользоваться браузером, создавать папки и файлы, устанавливать программы).</p>
+                </div>
+                <div class="content__article">
+                    <h3 class="subtitle">Чему вы научитесь</h3>
+                    <p class="about__text">На этом курсе вы узнаете, как устроены веб-сайты и как создавать их с нуля. Изучите основы языков <span class="black"> HTML, CSS </span> и немного <span class="black"> JavaScript </span>. Мы вместе сверстаем сайт нашей группы по этому макету. А затем вы <span class="orange"> сами </span> сверстаете свои личные странички в качестве домашнего задания и мы выложим все это на сервер.</p>
+                </div>
+            </div>
+            <h2 class="heading">
+                <span class="quotation quotation__left">“</span> 
+                Учимся вместе!
+                <span class="quotation quotation__right">”</span> 
+            </h2>
+        </div>
+
+    </main>
+   </div>
+
+    <footer class="footer">
+        <p class="footer__text">2023 &copy;</p> 
+        <a class="footer__text footer__text-a" href="#">учебный центр</a> 
+    </footer>
+
+    <script>
+
+        const btn = document.querySelector(".button__first");
+        const btnForm = document.querySelector(".button__second");
+        const popup = document.querySelector(".popup");
+
+
+        btn.addEventListener('click', function (e) {
+            popup.classList.toggle('visible')
+        })
+
+        btnForm.addEventListener('click', function (e) {
+            popup.classList.toggle('visible')
+        })
+
+    </script>
+    
+</body>
+</html>
