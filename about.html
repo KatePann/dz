@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,17 +20,17 @@
        <header class="header">
 
         <a href="index.html" class="logo">
-            <img src="./img/logo.svg" alt="logo">
+            <img src="./img/logo.svg" alt="логотип">
         </a>
         <nav>
             <ul class="menu">
                <li class="menu__list"><a href="index.html" class="menu__link ">Главная</a> </li>
                <li class="menu__list"><a href="students.html" class="menu__link">Студенты</a> </li>
-               <li class="menu__list"><a href="about.html" class="menu__link menu__link-active">О курсе</a> </li>
+               <li class="menu__list"><a href="about.html" class="menu__link">О курсе</a> </li>
                <li class="menu__list"><a href="contacts.html" class="menu__link">Контакты</a> </li>
             </ul>
         </nav>
-        <a href="#" class="button">Войти</a>
+        <a href="https://www.google.ru/" class="button button__first">Войти</a>
 
     </header>
 
@@ -37,14 +38,21 @@
 
        <h2 class="subtitle">О курсе 📱️</h2>
        <p class="about__text">Посмотрите видео о нас</p>
-       <img class="about__video" src="./img/video 1.png" alt="video">
+       <video class="about__video" width="400" height="300" controls="controls" poster="./img/video1.png">
+        <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+        <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+        Тег video не поддерживается вашим браузером. 
+       </video>
 
     </main>
    </div>
 
     <footer class="footer">
         <p class="footer__text">2023 &copy;</p> 
-        <a class="footer__text footer__text-a" href="#">учебный центр</a> 
+        <a class="footer__text footer__text-a" href="https://www.google.ru/">учебный центр</a> 
     </footer>
+
+  
 </body>
 </html>

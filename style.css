@@ -25,7 +25,39 @@ body{
     padding-right: calc(50% - 1268px / 2);
 }
 
+.logo{
+    animation: rotate-scale-down-ver 0.65s linear both;
+}
 
+ @-webkit-keyframes rotate-scale-down-ver {
+    0% {
+      -webkit-transform: scale(1) rotateY(0);
+              transform: scale(1) rotateY(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateY(180deg);
+              transform: scale(0.5) rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateY(360deg);
+              transform: scale(1) rotateY(360deg);
+    }
+  }
+  @keyframes rotate-scale-down-ver {
+    0% {
+      -webkit-transform: scale(1) rotateY(0);
+              transform: scale(1) rotateY(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateY(180deg);
+              transform: scale(0.5) rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateY(360deg);
+              transform: scale(1) rotateY(360deg);
+    }
+  }
+  
 .menu{
     display: flex;
     list-style-type: none;
@@ -41,9 +73,10 @@ body{
     color: #FFFFFF;
     padding: 28px 18px;
     display: block;
+    transition: all .3s;
 }
 
-.menu__link-active{
+.menu__link:hover, .menu__link:active{
     background: #FFFFFF;
     font-style: normal;
     font-weight: 400;
@@ -66,6 +99,13 @@ body{
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: all .3s;
+}
+
+.button:hover, .button:active{
+    background: #FFFFFF;
+    color: #EA5D21;
+    border: 2px solid #EA5D21;
 }
 
 /*главная start*/
@@ -111,6 +151,7 @@ body{
     background: #FFFFFF;
     border: 1px solid #808080;
     padding-left: 14px;
+    font-size: 24px;
 }
 
 .popup__input-log{
@@ -284,6 +325,11 @@ color: #CF5510;
 
 .footer__text-a{
     margin-left: 5px;
+    transition: color .3s;
+}
+
+.footer__text-a:hover, .footer__text-a:active{
+    color: rgba(255, 255, 255, 0.774);;
 }
 
 /*студенты start*/
@@ -313,6 +359,10 @@ color: #CF5510;
    position: relative;
 }
 
+.aboutme{
+    text-decoration: none;
+}
+
 .student__new{
    position: absolute;
    top: -12px;
@@ -336,6 +386,10 @@ color: #CF5510;
    color: #000000;
    text-align: center;
    margin-top: 8px;
+}
+
+.student__name-about:hover, .student__name-about:active{
+    color: #c2a8a8;
 }
 /*студенты end*/
 
@@ -674,5 +728,78 @@ iframe{
    max-width: 280px;
 }
 
-/*контакты end*/
+
 }
+/*контакты end*/
+
+/*о себе start*/
+
+.content-about{
+    padding-left: calc(50% - 911px / 2);
+    padding-right: calc(50% - 911px / 2);
+}
+
+.about__me{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+.content-about-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.content-about-title{
+    font-style: normal;
+    font-size: 40px;
+    
+}
+
+.content-about-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    max-width: 300px;
+    margin-top: 15px;
+}
+
+.content-about-img{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.content-about-steck{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.content-about-name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+   
+}
+.content-about-ul{
+    list-style-type: square;
+    margin-top: 20px;
+}
+
+.content-about-list{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*о себе end*/
+
